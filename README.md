@@ -25,4 +25,16 @@ Paspaudus mygtuką – visi LED'ai turi būti išjungti.
 ---
 
 ## Programos veikimo logika
+Įjungiamas RCC laikrodis GPIOA ir GPIOD portams
 
+PD12–PD15 nustatomi į Output režimą
+
+PA0 nustatomas į Input režimą
+
+Programa įjungia visus LED (pradinė būsena)
+
+while(1):
+
+Nuskaitomas PA0 mygtukas
+
+Jei paspaustas → išjungti visus LED
